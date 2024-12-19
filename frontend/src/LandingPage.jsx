@@ -217,9 +217,9 @@ const LandingPage = () => {
     const fetchData = async () => {
       try {
         const [coursesResponse, studentsResponse, instructorsResponse] = await Promise.all([
-          fetch("https://super-duper-invention-p9vpw4qgv6qcrx7r-3000.app.github.dev/api/courses"),
-          fetch("https://super-duper-invention-p9vpw4qgv6qcrx7r-3000.app.github.dev/api/students"),
-          fetch("https://super-duper-invention-p9vpw4qgv6qcrx7r-3000.app.github.dev/api/instructors"),
+          fetch("http://localhost:3000/api/courses"),
+          fetch("http://localhost:3000/api/students"),
+          fetch("http://localhost:3000/api/instructors"),
         ]);
 
         if (!coursesResponse.ok || !studentsResponse.ok || !instructorsResponse.ok) {

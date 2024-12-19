@@ -9,7 +9,7 @@ const Courses = () => {
   useEffect(() => {
     const fetchCourses = async () => {
       try {
-        const response = await fetch('https://super-duper-invention-p9vpw4qgv6qcrx7r-3000.app.github.dev/api/courses');
+        const response = await fetch('http://localhost:3000/api/courses');
         if (!response.ok) {
           throw new Error('Failed to fetch courses');
         }
